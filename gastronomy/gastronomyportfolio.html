@@ -4,36 +4,30 @@
         <meta charset="UTF-8">
     </head>
     <style>
-        body {
-            background-color: black;
+        .coluna{
+          float: left;
+          width: 20.00%;
         }
-        a:link {
-            color: white;
+        .row::after {
+          content: "";
+          clear: both;
+          display: table;
         }
-        a:visited {
-            color: white;
-        }
-        a:hover {
-            color: crimson;
-        }
-        a:active {
-            color: blue;
-        }
-        .row {
-            display: inline-block;
-        }
-    </style>
+        </style>
     <body>
         <div class="row">
-            <div><img src="1.jpg" width="200px" alt="gross food"></div>
-            <div><img src="2.jpg" width="200px" alt="gross food"></div>
-            <div><img src="3.png" width="200px" alt="gross food"></div>
-            <div><img src="4.jpg" width="200px" alt="gross food"></div>
-            <div><img src="5.jpg" width="200px" alt="gross food"></div>
-            <div><img src="6.jpg" width="200px" alt="gross food"></div>
-            <div><img src="7.jpg" width="200px" alt="gross food"></div>
-            <div><img src="8.jpg" width="200px" alt="gross food"></div>
-            <div><img src="9.jpg" width="200px" alt="gross food"></div>
+
+            <div class="coluna">
+                <img src="1.jpg" alt="descrição da imagem" style="width:200px">
+            </div>
+
+            <div class="coluna">
+                <img src="2.jpg" alt="descrição da imagem" style="width:200px">
+            </div>
+            <div class="coluna">
+                <img src="3.png" alt="descrição da imagem" style="width:200px">
+            </div>
+
         </div>
     </body>
 </html>
